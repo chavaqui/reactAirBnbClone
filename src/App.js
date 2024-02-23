@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 // const myPage = (
 //   <h1></h1>
@@ -7,22 +7,21 @@ import './App.css';
 //   <h1></h1>
 //   <h1></h1>
 // )
-const header1 = document.createElement('h1');
-header1.textContent = 'chemycal rage';
-header1.className = 'classTop'
+const header1 = document.createElement("h1");
+header1.textContent = "chemycal rage";
+header1.className = "classTop";
 
-const text1 =  document.createElement('span');
-text1.textContent = 'I am a relateive text';
-text1.className = 'class span higher';
+const text1 = document.createElement("span");
+text1.textContent = "I am a relateive text";
+text1.className = "class span higher";
 
-export const list1 = document.createElement('button');
-list1.textContent = 'myButtonX';
+export const list1 = document.createElement("button");
+list1.textContent = "myButtonX";
 
-const myPage = document.getElementById('root');
+const myPage = document.getElementById("root");
 myPage.append(header1);
 myPage.append(text1);
 myPage.append(list1);
-
 
 function App() {
   return (
@@ -42,23 +41,74 @@ function MyComponentX() {
     <div>
       <h1>HELLOW</h1>
       <span>It is the coment lo g</span>
-      <div className='compose-center-react min-width-500'>
-        <h3 className='title-center-react'>Hi Chav_!</h3>
-        <p className='text-center-react'>It is the content text of my pharagrap and contains some interesting messages, like "Have fun wiriting code."</p>
+      <div className="compose-center-react min-width-500">
+        <h3 className="title-center-react">Hi Chav_!</h3>
+        <p className="text-center-react">
+          It is the content text of my pharagrap and contains some interesting
+          messages, like "Have fun wiriting code."
+        </p>
       </div>
-      <div className='compose-img-card'>
-        <h2 className='compose-img-title'>My responsive image</h2>
-        <img src={logo} alt='img logo' width='200px'></img>
+      <div className="compose-img-card">
+        <h2 className="compose-img-title">My responsive image</h2>
+        <img src={logo} alt="img logo" width="200px"></img>
       </div>
-      <div className='footer-react'>
-        <span className='description-footer'>It is the footer</span>
+      <div className="footer-react">
+        <span className="description-footer">It is the footer</span>
+      </div>
+    </div>
+  );
+}
+function HeaderX() {
+  return (
+    <header className="compose-img-card">
+      <h1 className="compose-img-title">HEADER - My responsive image</h1>
+      <img src={logo} alt="img logo" width="200px"></img>
+    </header>
+  );
+}
+function Header() {
+  return (
+    <header>
+      <nav>
+        <img src="logo192.png" width='40px' alt='logo small'/>
+        <ul className="nav-list">
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+  )
+}
+function Footer() {
+  return (
+    <footer className="footer-react">
+      <span className="description-footer">FOOTER - It is the footer</span>
+    </footer>
+  );
+}
+function MainContent() {
+  return (
+    <div>
+      <h1>MAIN CONTENT</h1>
+      <div className="compose-center-react min-width-500">
+      <h3 className="title-center-react">Hi Chav_!</h3>
+      <p className="text-center-react">
+        It is the content text of my pharagrap and contains some interesting
+        messages, like "Have fun wiriting code."
+      </p>
       </div>
     </div>
   );
 }
 
-const  ExportedToReactApp = {
-  App,MyComponentX
-}
+const ExportedToReactApp = {
+  App,
+  MyComponentX,
+  HeaderX,
+  Header,
+  Footer,
+  MainContent,
+};
 
 export default ExportedToReactApp;
