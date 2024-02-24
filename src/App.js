@@ -1,12 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-// const myPage = (
-//   <h1></h1>
-//   <h2></h2>
-//   <h1></h1>
-//   <h1></h1>
-// )
 const header1 = document.createElement("h1");
 header1.textContent = "chemycal rage";
 header1.className = "classTop";
@@ -23,7 +17,7 @@ myPage.append(header1);
 myPage.append(text1);
 myPage.append(list1);
 
-function App() {
+export function App() {
   return (
     <div className="App">
       <ul>
@@ -36,7 +30,7 @@ function App() {
   );
 }
 
-function MyComponentX() {
+export function MyComponentX() {
   return (
     <div>
       <h1>HELLOW</h1>
@@ -58,7 +52,7 @@ function MyComponentX() {
     </div>
   );
 }
-function HeaderX() {
+export function HeaderX() {
   return (
     <header className="compose-img-card">
       <h1 className="compose-img-title">HEADER - My responsive image</h1>
@@ -66,7 +60,7 @@ function HeaderX() {
     </header>
   );
 }
-function Header() {
+export function Header() {
   return (
     <header>
       <nav>
@@ -80,14 +74,14 @@ function Header() {
     </header>
   )
 }
-function Footer() {
+export function Footer() {
   return (
     <footer className="footer-react">
       <span className="description-footer">FOOTER - It is the footer</span>
     </footer>
   );
 }
-function MainContent() {
+export function MainContent() {
   return (
     <div>
       <h1>MAIN CONTENT</h1>
@@ -101,14 +95,31 @@ function MainContent() {
     </div>
   );
 }
+export function ExplorerMidu({titlex}) {
+  return (
+    <>
+      <h1>EXAMPLE TEST component with params</h1>
+      <br/>
+      <h2>{titlex}</h2>
+    </>
+  )
+}
 
-const ExportedToReactApp = {
-  App,
-  MyComponentX,
-  HeaderX,
-  Header,
-  Footer,
-  MainContent,
-};
+export default function SingleComponentButton() {
+  return (
+      <h1>ADS</h1>
+  )
+}
 
-export default ExportedToReactApp;
+// const ExportedToReactApp = {
+//   App,
+//   MyComponentX,
+//   HeaderX,
+//   Header,
+//   Footer,
+//   MainContent,
+//   ExplorerMidu,
+//   SingleComponentButton
+// };
+
+// export default ExportedToReactApp;

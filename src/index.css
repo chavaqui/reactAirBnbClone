@@ -23,6 +23,7 @@ li {
   margin: 20px;
 }
 li:hover {
+  cursor: pointer;
   background-color: aqua;
   border: 2px solid #db0000;
 }
